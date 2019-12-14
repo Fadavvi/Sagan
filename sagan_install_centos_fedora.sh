@@ -98,6 +98,23 @@ service snmptt start
 chkconfig snmptt on
 sh -c "echo /usr/local/lib  >> /etc/ld.so.conf.d/local.conf"
 $ ldconfig
+echo ${RED}'\n\nStep 11: download Sagan Rules\n'${NC}
+cd /usr/local/etc
+git clone https://github.com/beave/sagan-rules
+echo ${RED}'\n\nStep 12: Add Sagan user\n'${NC}
+adduser sagan --disabled-password --disabled-login
+mkdir /var/log/sagan
+mkdir /var/run/sagan
+mkdir /var/sagan/
+mkdir /var/sagan/ipc
+mkdir /var/sagan/fifo/
+mkdir /var/log/sagan/stats
+touch /var/log/sagan/stats/sagan.stats
+chown -R sagan /var/sagan
+chown -R sagan /var/run/sagan
+chown -R sagan /var/sagan
+chown -R sagan /var/log/
+mkfifo /var/sagan/fifo/sagan.fifo
 echo ${RED}'Notice!! you should change : \n'
 echo '/usr/local/etc/sagan.yaml \n\n'
 echo 'GeoIP file: /usr/local/share/GeoIP/GeoLite2-City.mmdb \n'
