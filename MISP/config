@@ -1,0 +1,24 @@
+[main]
+;FQDN or IP
+misp_host=192.168.250.94
+
+;http or https
+misp_proto=http
+
+; You can find it in Event Actions -> Automation
+misp_auth_key=Pv7MivbmeU34q9CyjK6CywOI6Jwvd3oDOzRg3PCe 
+
+[output]
+; 1 -> enable | 0 ->disable
+bro_enable=1 
+
+;Your options: all/ip/url/domain/email/filename/filehash/certhash/software
+bro_out_type=all 
+bro_output_path=d:\\bro.txt
+; 1 -> enable | 0 ->disable
+snort_enable=1
+snort_output_path=d:\\snort.rules
+
+[sagan]
+; 1 -> enable | 0 ->disable
+auto_restart=1
