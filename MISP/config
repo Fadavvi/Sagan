@@ -14,10 +14,10 @@ bro_enable=1
 
 ;Your options: all/ip/url/domain/email/filename/filehash/certhash/software
 bro_out_type=all 
-bro_output_path=d:\\bro.txt
+bro_output_path=/opt/critical-stack/frameworks/intel/master-public.bro.dat
 ; 1 -> enable | 0 ->disable
 snort_enable=1
-snort_output_path=d:\\snort.rules
+snort_output_path=/usr/local/etc/sagan-rules/snort.rules
 
 [sagan]
 ; 1 -> enable | 0 ->disable
