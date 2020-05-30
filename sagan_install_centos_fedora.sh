@@ -121,3 +121,5 @@ echo 'GeoIP file: /usr/local/share/GeoIP/GeoLite2-City.mmdb \n'
 echo 'SNMP conf : /etc/snmp/snmptt.ini '
 echo 'Netflow Tool: /usr/local/bin/nfcapd '
 echo 'Rules are stored in: /usr/local/etc/sagan-rules'${NC}
+sh -c "echo /usr/local/lib  >> /etc/ld.so.conf.d/local.conf"
+ ldconfig
