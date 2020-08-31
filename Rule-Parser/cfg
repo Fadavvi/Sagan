@@ -1,0 +1,7 @@
+[db]
+mongo_ip=127.0.0.1
+mongo_port=6379
+mongo_password=@npSec2016
+#mongo_password=AVeryVeryGoodPassword4Mngo#2020
+mongo_user=root
+mongo_dbname=rules
