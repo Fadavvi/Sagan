@@ -11,7 +11,7 @@
     
      Sagan_Auto_start.sh + sagan.service
 	
-    Resolve /var/run/sagan/ problem for each start & auto start. (Just Cron it!)
+    Resolve /var/run/sagan/ problem for each start & auto start.
     
 -------------------------------------------
     
