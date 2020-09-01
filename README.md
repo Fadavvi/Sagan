@@ -24,6 +24,7 @@
 
     Rule Parser: (python3 + MongoDB)
     * pymongo Library is required (pip3 install pymongo | python3 -m pip install pymongo)
+    ** change IP, Port, Username and password on MongoDB host in "cfg" file
     
     Parse Sagan rules and insert into the MongoDB
   	-h, --help            show help message and exit
